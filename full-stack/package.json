@@ -1,0 +1,11 @@
+{
+  "name": "safaiwala",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run server --prefix backend\" \"npm run dev --prefix frontend1\" \"npm run dev --prefix admin\"",
+    "install-all": "npm install --prefix backend && npm install --prefix frontend1 && npm install --prefix admin"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
